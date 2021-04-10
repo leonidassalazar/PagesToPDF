@@ -1,21 +1,23 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using Common.Utils;
-using WuxiaWorldToPDF.Business;
+using System.Net;
+using System.Net.Http;
 
 namespace WuxiaWorldToPDF
 {
-    public class Program
+    internal class Program
     {
-        private static void Main()
+        private static void Main(string[] args)
         {
             var configuration = Configuration.GetInstance();
             var novels = JsonConvert.DeserializeObject<JArray>(configuration.GetNode("novels"));
             var novelsCode = (novels ?? new JArray())
                 .ToDictionary(novel => novel["Code"]?.ToString() ?? Guid.NewGuid().ToString(),
-                    novel => novel["Title"]?.ToString());
+                                                    novel => novel["Title"]?.ToString());
 
             var wuxiaWorldNovelHtmlToPdf = new WuxiaWorldNovelHtmlToPdf(novelsCode);
             wuxiaWorldNovelHtmlToPdf.CreateAndSaveBookAllNovels();

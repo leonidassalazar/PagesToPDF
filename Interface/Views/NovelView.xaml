@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="Interface.Views.NovelView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local ="clr-namespace:Interface.ViewModel"
+             mc:Ignorable="d">
+    <UserControl.DataContext>
+        <local:NovelViewModel/>
+    </UserControl.DataContext>
+    <Grid>
+        <DataGrid AutoGenerateColumns="False" CanUserAddRows="False" AllowDrop="False" CanUserDeleteRows="False"
+                  ItemsSource="{Binding Path=Novels}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Novel name" Binding="{Binding Title}"/>
+                <DataGridTextColumn Header="Novel code" Binding="{Binding NovelCode}"/>
+                <DataGridCheckBoxColumn Header="Active" Binding="{Binding Active}"/>
+                <DataGridCheckBoxColumn Header="Active" Binding="{Binding Active}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

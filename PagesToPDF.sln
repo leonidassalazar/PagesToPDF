@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WuxiaWorldToPDF", "WuxiaworldToPDF\WuxiaWorldToPDF.csproj", "{F422E8F6-8268-4AD9-90B5-27A03038F84A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WuxiaWorldToPDF", "WuxiaworldToPDF\WuxiaWorldToPDF.csproj", "{F422E8F6-8268-4AD9-90B5-27A03038F84A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interface", "Interface\Interface.csproj", "{9592DF70-A3B4-461C-B8AC-7511D7AB30A1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Domaind\Models.csproj", "{5C6A3FE3-FB04-472A-B01F-8922F9DC78C6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{E2247DF2-1226-4205-8C43-CF1D05D41091}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Business\Business.csproj", "{722CCFD7-9B9B-44A1-9F07-C5831B307A6D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NovelFullToPDF", "NovelUpdatesToPDF\NovelFullToPDF.csproj", "{B88EC60E-72AC-49A5-AA19-5765DA33E704}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{16C38F83-243F-43EF-9C30-CCF9646B8542}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +27,30 @@ Global
 		{F422E8F6-8268-4AD9-90B5-27A03038F84A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F422E8F6-8268-4AD9-90B5-27A03038F84A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F422E8F6-8268-4AD9-90B5-27A03038F84A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9592DF70-A3B4-461C-B8AC-7511D7AB30A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9592DF70-A3B4-461C-B8AC-7511D7AB30A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9592DF70-A3B4-461C-B8AC-7511D7AB30A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9592DF70-A3B4-461C-B8AC-7511D7AB30A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C6A3FE3-FB04-472A-B01F-8922F9DC78C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C6A3FE3-FB04-472A-B01F-8922F9DC78C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C6A3FE3-FB04-472A-B01F-8922F9DC78C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C6A3FE3-FB04-472A-B01F-8922F9DC78C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2247DF2-1226-4205-8C43-CF1D05D41091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2247DF2-1226-4205-8C43-CF1D05D41091}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2247DF2-1226-4205-8C43-CF1D05D41091}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2247DF2-1226-4205-8C43-CF1D05D41091}.Release|Any CPU.Build.0 = Release|Any CPU
+		{722CCFD7-9B9B-44A1-9F07-C5831B307A6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{722CCFD7-9B9B-44A1-9F07-C5831B307A6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{722CCFD7-9B9B-44A1-9F07-C5831B307A6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{722CCFD7-9B9B-44A1-9F07-C5831B307A6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B88EC60E-72AC-49A5-AA19-5765DA33E704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B88EC60E-72AC-49A5-AA19-5765DA33E704}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B88EC60E-72AC-49A5-AA19-5765DA33E704}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B88EC60E-72AC-49A5-AA19-5765DA33E704}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16C38F83-243F-43EF-9C30-CCF9646B8542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16C38F83-243F-43EF-9C30-CCF9646B8542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16C38F83-243F-43EF-9C30-CCF9646B8542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16C38F83-243F-43EF-9C30-CCF9646B8542}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
