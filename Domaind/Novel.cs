@@ -1,5 +1,4 @@
-﻿using Models.Annotations;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
@@ -88,8 +87,7 @@ namespace Models
         #endregion
         
         #region Protected Methods
-
-        [NotifyPropertyChangedInvocator]
+        
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
